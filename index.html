@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nha app VideoKlube</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width"/>
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="style.css"/>
+ 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova/cordova.js"></script>
+</head>
+<body>
+	
+<div data-role="page">	
+	<div data-role="header" data-position="fixed">
+		<h1>NVK-Movies</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	
+    	<ul data-role="listview">
+    		
+    		<li><a href="#film1" data-transition="slide">
+    			<img src="images/film1.jpg"></img>
+    			<h3>O Voô</h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p><br>Maiores de 16 anos</br></p>
+			</a></li>
+				
+			<li>
+				<a href="#film2" data-transition="slide">
+    			<img src="images/film2.jpg"></img>
+    			<h3> Argo </h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p>
+					<br>Maiores de 16 anos</br>
+				</p>
+			</a></li>
+			
+			<li><a href="#film3" data-transition="slide">
+    			<img src="images/film3.jpg"></img>
+    			<h3>Amor é tudo que voce precisa</h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p><br>Maiores de 16 anos</br></p>
+			</a></li> 
+			
+			<li>
+				<a href="#film4" data-transition="slide">
+    				<img src="images/film4.jpg"></img>
+    				<h3>Django Unchained</h3>
+					<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+					<p><br>Maiores de 16 anos</br></p>
+				</a>
+			</li>
+				
+			<li><a href="#film5" data-transition="slide">
+    			<img src="images/film5.jpg"></img>
+    			<h3>The Departed</h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p><br>Maiores de 16 anos</br></p>
+			</a></li>
+			
+			<li><a href="#film6" data-transition="slide">
+    			<img src="images/film6.jpg"></img>
+    			<h3>Dog Day Afternoon</h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p><br>Maiores de 16 anos</br></p>
+			</a></li>
+			
+			<li><a href="#film7" data-transition="slide">
+    			<img src="images/film7.jpg"></img>
+    			<h3>Scarface</h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p><br>Maiores de 16 anos</br></p>
+			</a></li>
+			
+			<li><a href="#film8" data-transition="slide">
+    			<img src="images/film8.jpg"></img>
+    			<h3>The Godfather I </h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p>
+					<br>Maiores de 16 anos</br></p>
+			</a></li>
+			
+			<li><a href="#film9" data-transition="slide">
+    			<img src="images/film9.jpg"></img>
+    			<h3>The Godfather II</h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p><br>Maiores de 16 anos</br></p>
+			</a></li>
+			
+			<li><a href="#film10" data-transition="slide">
+    			<img src="images/film10.jpg"></img>
+    			<h3>The Godfather III</h3>
+				<p class="horario"> 17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</p>
+				<p><br>Maiores de 16 anos</br></p>
+			</a></li>
+    	</ul>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     					<li><a href="#" data-icon="info">Info</a></li>
+      				<!--	<li><a href="#">Three</a></li> -->
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+			
+			
+	
+		
+</div><!--page-- > -->
+
+<div data-role="page" id="film1" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed">
+		<h1>O voo</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film1.jpg" class="tdImagem"></td><td><h3>O voo</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis">Voo' acompanha Whip Whitaker (Washington), um alcólatra que se torna um herói norte-americano quando consegue pousar uma aeronave comercial após uma pane no sistema. O problema é que ele estava sobre a influência de drogas e álcool no momento, e não aceita seu novo rótulo de salvador da pátria.	
+    	</p>
+    	
+    	<a href="http://www.youtube.com/watch?v=xnVNNR6CEOE" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     				<!--	<li><a href="#">Two</a></li> -->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+</div><!--page-- > -->
+			
+<div data-role="page" id="film2" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed">
+		<h1> Argo</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film2.jpg" class="tdImagem"></td><td><h3> Argo</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis">
+    		O filme se inicia em 4 de novembro de 1979, quando a embaixada norte-americana em Teerã é invadida por militantes islâmicos e estudantes iranianos, exigindo a extradição do ex-governante do país Mohammad Reza Pahlavi, em tratamento de saúde nos EUA, gerando a crise de reféns no Irã. Entretanto, seis americanos conseguiram sair da embaixada antes da invasão, escondendo-se na residência do embaixador do Canadá.
+A CIA estuda meios de resgatá-los e Tony Mendez engendra a idéia de resgate por meio de uma equipe de produção de um falso filme de ficção científica, chamado Argo. Com o apoio de seu chefe, Jack O'Donnell e com a ajuda de John Chambers, um renomado especialista em maquiagem da indústria cinematográfica e do ator Lester Siegel, monta uma equipe e viaja até Istambul, antes de chegar a Teerã. Ali, treina as novas identidades com os refugiados, que passarão a ser cidadãos canadenses membros da equipe do filme, que retornarão aos seus lares num voo da Swissair.	
+    	</p>
+    	
+    	<a href="http://www.youtube.com/watch?v=xnVNNR6CEOE" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     				<!--	<li><a href="#">Two</a></li> -->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div><!--page-- > -->
+
+<div data-role="page" id="film3" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed">
+		<h1>Django Unchained</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film3.jpg" class="tdImagem"></td><td><h3>Django Unchained</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis">
+    		
+    	</p>
+    	
+    	<a href="" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     					<!--<li><a href="#">Two</a></li>-->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div><!--page-- > -->
+
+<div data-role="page" id="film4" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed">
+		<h1>Django Unchained</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film4.jpg" class="tdImagem"></td><td><h3>Django Unchained</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis">
+    		The film takes place in Boston, where Irish Mob boss Francis "Frank" Costello plants Colin Sullivan as a mole within the Massachusetts State Police. (The characters are loosely based on famous gangster Whitey Bulger and corrupt FBI agent John Connolly, who grew up with Bulger.[3]) Simultaneously, the police assign undercover cop William "Billy" Costigan to infiltrate Costello's crew. When both sides realize the situation, each man attempts to discover the other's true identity before his own cover is blown.
+    	</p>
+    	
+    	<a href="http://www.youtube.com/watch?v=SGWvwjZ0eDc" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     				<!--	<li><a href="#">Two</a></li> -->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div><!--page-- > -->
+
+<div data-role="page" id="film5" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed">
+		<h1>The departed</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film5.jpg" class="tdImagem"></td><td><h3>The Departed</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis">
+    		The film takes place in Boston, where Irish Mob boss Francis "Frank" Costello plants Colin Sullivan as a mole within the Massachusetts State Police. (The characters are loosely based on famous gangster Whitey Bulger and corrupt FBI agent John Connolly, who grew up with Bulger.[3]) Simultaneously, the police assign undercover cop William "Billy" Costigan to infiltrate Costello's crew. When both sides realize the situation, each man attempts to discover the other's true identity before his own cover is blown.
+    	</p>
+    	
+    	<a href="http://www.youtube.com/watch?v=SGWvwjZ0eDc" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-incon="home">Videoclube</a></li>
+     					<!--<li><a href="#">Two</a></li>-->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div><!--page-- > -->
+
+<div data-role="page" id="film6" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed">
+		<h1>Dog Day Afternoon</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film6.jpg" class="tdImagem"></td><td><h3>Dog Day Afternoon</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis"> <p/>
+    	
+    	<p>
+    		First-time crook Sonny Wortzik (Al Pacino), his friend Salvatore "Sal" Naturile (John Cazale), and Stevie (Gary Springer) attempt to rob the fictitious First Brooklyn Savings Bank. The plan immediately goes awry when Stevie loses his nerve shortly after Sal pulls out his gun, and Sonny is forced to let him flee the scene. In the vault, Sonny discovers that he and Sal have arrived after the daily cash pickup, and only $1,100 in cash remains in the bank. To compensate, Sonny takes a number of traveler's cheques, but his attempt to prevent the cheques from being traced by burning the bank's register in a trash can causes smoke to billow out the side of the building, alerting the business across the street to suspicious activities. Within minutes, the building is surrounded by the police. Unsure of what to do, the two robbers camp out in the bank, holding all the workers hostage.
+    	</p>
+    	<a href="http://www.youtube.com/watch?v=0ekxROBok84" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-incon="home">Videoclube</a></li>
+     					<!--<li><a href="#">Two</a></li>-->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div><!--page-- > -->
+
+<div data-role="page" id="film7" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed">
+		<h1>Scarface</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film7.jpg" class="tdImagem"></td><td><h3>Dog Day Afternoon</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis"> <p/>
+    	
+    	<p>
+    		First-time crook Sonny Wortzik (Al Pacino), his friend Salvatore "Sal" Naturile (John Cazale), and Stevie (Gary Springer) attempt to rob the fictitious First Brooklyn Savings Bank. The plan immediately goes awry when Stevie loses his nerve shortly after Sal pulls out his gun, and Sonny is forced to let him flee the scene. In the vault, Sonny discovers that he and Sal have arrived after the daily cash pickup, and only $1,100 in cash remains in the bank. To compensate, Sonny takes a number of traveler's cheques, but his attempt to prevent the cheques from being traced by burning the bank's register in a trash can causes smoke to billow out the side of the building, alerting the business across the street to suspicious activities. Within minutes, the building is surrounded by the police. Unsure of what to do, the two robbers camp out in the bank, holding all the workers hostage.
+    	</p>
+    	<a href="http://www.youtube.com/watch?v=0ekxROBok84" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     			<!--  <li><a href="#">Two</a></li> -->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div><!--page-- > -->
+
+<div data-role="page" id="film8" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed" data-id="fixedHeader">
+		<h1>The Godfather I</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+	<div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film8.jpg" class="tdImagem"></td><td><h3>The Godfather I</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis">
+    		The Godfather is a 1972 American crime film directed by Francis Ford Coppola and produced by Albert S. Ruddy from a screenplay by Mario Puzo and Coppola. Based on Puzo's 1969 novel of the same name, the film stars Marlon Brando and Al Pacino as the leaders of a powerful New York crime family. The story, spanning the years 1945 to 1955, centers on the transformation of Michael Corleone (Pacino) from reluctant family outsider to ruthless Mafia boss while also chronicling the Corleone family under the patriarch Vito Corleone (Brando).
+The Godfather is widely regarded as one of the greatest films in world cinema[3]—and as one of the most influential, especially in the gangster genre.[4] Now ranked as the second greatest film in American cinema (behind Citizen Kane) by the American Film Institute,[5] it was selected for preservation in the United States National Film Registry in 1990.[6]
+    	</p>
+    	
+    	<a href="https://www.youtube.com/watch?v=sY1S34973zA" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     				<!--	<li><a href="#">Two</a></li> -->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div><!--page-- > -->
+
+<div data-role="page" id="film9" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed" data-id="fixedheader">
+		<h1>The Godfather II</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film9.jpg" class="tdImagem"></td><td><h3>The Godfather II</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis">
+    		The Godfather Part II is a 1974 American crime epic that Francis Ford Coppola produced, directed, and co-wrote with Mario Puzo, starring Al Pacino, Robert Duvall, Diane Keaton, and Robert De Niro. Partially based on Puzo's 1969 novel The Godfather, the film is in part both a sequel and a prequel to The Godfather, presenting two parallel dramas. The main storyline, following the first film's events, centers on Michael Corleone (Pacino), the new Don of the Corleone crime family, trying to hold his business ventures together from 1958 to 1959; the other is a series of flashbacks following his father, Vito Corleone (De Niro), from his childhood in Sicily in 1901 to his founding of the Corleone family in New York City.
+The film was released in 1974 to great critical acclaim, some deeming it superior to the original.[3] Nominated for eleven Academy Awards and the first sequel to win for Best Picture, its six Oscars included Best Director for Coppola, Best Supporting Actor for De Niro and Best Adapted Screenplay for Coppola and Puzo. Pacino won the BAFTA Award for Best Actor and was nominated for the Academy Award for Best Actor.
+    		
+    	</p>
+    	
+    	<a href="https://www.youtube.com/watch?v=qJr92K_hKl0" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     				<!--	<li><a href="#">Two</a></li> -->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div> <!-- page -->
+
+<div data-role="page" id="film10" data-add-back-btn="true" data-back-btn-text="videoclube">	
+	<div data-role="header" data-position="fixed" data-id="fixedheader">
+		<h1>The Godfather III</h1>
+	</div><!-- /header -->
+	
+	<!-- Begin Content    -->
+    <div data-role="content">
+    	<p>
+    		<table>
+    			<tr><td rowspan="3"><img src="images/film10.jpg" class="tdImagem"></td><td><h3>The Godfather III</h3></td></tr>
+    			<tr><td class="tdHorario">17:05, 19:05, 21:05, 23:00, V y s 01:00, S y D 12:30 sala 3D 20:00, V y s 00:20</td></tr>
+    			<tr><td class="tdPublico"><br>Maiores de 16 anos</br></td></tr>
+    			
+    		</table>
+
+    	</p>
+    	
+    	<p><h4>SINOPSIS</h4></p>
+    	<p class="sinopsis">
+    		
+    	</p>
+    	
+    	<a href="https://www.youtube.com/watch?v=kCAcWDDPdNY" data-role="button" rel="external">VER TRAILER</a>
+	</div><!-- /content -->
+			
+			
+		<!--	<div data-role="footer" data-position="fixed">
+				
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home">Videoclube</a></li>
+						<li><a href="#" data-icon="info">Info</a></li>
+					</ul>
+				</div>
+			</div> --> 
+			
+			
+			<div data-role="footer" data-position="fixed" data-id="fixedFooter">
+				
+				<div data-role="navbar">
+   					 <ul>
+      					<li><a href="#" data-icon="home">Videoclube</a></li>
+     				<!--	<li><a href="#">Two</a></li> -->
+      					<li><a href="#" data-icon="info">Info</a></li>
+    				</ul>
+  				</div><!-- /navbar -->
+  			
+  			</div><!-- /footer -->
+	
+		
+</div> <!-- page -->
+</body>
+</html>
